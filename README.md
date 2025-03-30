@@ -8,17 +8,20 @@
 
 Down here it is described how to run the project on your machine.
 
-1. **Change working directory.**
+1. **Start Docekr app.**
+   Simply start the Docker on a background.
+
+2. **Change working directory.**
    Navigate to the root directory of the project in your console.
 
-2. **Create a Virtual Environment.**
+3. **Create a Virtual Environment.**
    Run the following command in the console to create a Virtual Environment:
 
 ```bash
 python -m venv .venv
 ```
 
-3. **Activate the Virtual Environment.**
+4. **Activate the Virtual Environment.**
    Run one of the following commands to activate the Virtual Environment:
 
 For Windows:
@@ -33,7 +36,7 @@ For Linux/MacOS:
 source .venv/bin/activate
 ```
 
-4. **Build and Running the project**
+5. **Build and Running the project**
    To build and run the project, write the following in the root directory of the project:
 
 ```bash
