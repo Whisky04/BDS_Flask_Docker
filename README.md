@@ -8,7 +8,7 @@
 
 Down here it is described how to run the project on your machine.
 
-1. **Start Docekr app.**
+1. **Start Docker app.**
    Simply start the Docker on a background.
 
 2. **Change working directory.**
@@ -47,13 +47,13 @@ docker-compose up --build
 
 Below is an overview of the project's files.
 
-- **app.py**  
+- **app.py**
   A Flask application, that returns "Hello, Docker!" when followed by URL.
 
-- **Dockerfile**  
+- **Dockerfile**
   A script, that creates a Docker image from Python 3.11.9-slim, installs dependencies, copies the app code and runs the project on port 5000.
 
-- **docker-compose.yml**  
+- **docker-compose.yml**
   A configuration file for Docker Compose that builds and runs the Flask container, mapping port 5000 and setting the environment to development state.
 
 - **requirements.txt**
