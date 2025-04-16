@@ -18,7 +18,6 @@ def get_all_objects():
     objects = [{"id": row[0], "name": row[1]} for row in rows]
     return jsonify(objects)
 
-
 @app.route('/addObject', methods=['POST'])
 def add_object():
     conn = get_db_connection()
@@ -31,7 +30,6 @@ def add_object():
     conn.close()
     return jsonify({"message": "Object added successfully"})
 
-
 @app.route('/deleteObject/<int:id>', methods=['DELETE'])
 def delete_object(id):
     conn = get_db_connection()
@@ -42,7 +40,6 @@ def delete_object(id):
     cur.close()
     conn.close()
     return jsonify({"message": "Object deleted successfully"})
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
