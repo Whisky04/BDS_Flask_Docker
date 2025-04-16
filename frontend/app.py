@@ -1,8 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for
+from dotenv import load_dotenv
+
+import os
 import requests
 
+load_dotenv()
+
 app = Flask(__name__, template_folder='templates')
-BACKEND_URL = "http://backend:5000"
+BACKEND_URL = os.environ.get("BACKEND_URL")
 
 @app.route('/')
 def index():
