@@ -1,9 +1,5 @@
-from dotenv import load_dotenv
-
 import psycopg2
 import os
-
-load_dotenv()
 
 DB_NAME = os.environ.get("POSTGRES_DB")
 DB_USER = os.environ.get("POSTGRES_USER")
